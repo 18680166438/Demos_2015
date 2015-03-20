@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ApH-sY-o5D">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="geC-8u-cXg">
+            <objects>
+                <controller hidesWhenLoading="NO" id="ApH-sY-o5D" customClass="InterfaceController" customModule="IWatchDemo_WatchKit_Extension" customModuleProvider="target">
+                    <items>
+                        <imageView width="136" height="166" alignment="left" id="RWj-ZT-VZ7"/>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="Gji-XW-N0T"/>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="YRH-k7-qmv"/>
+                        <dateLabel alignment="left" id="gvL-uP-mcE">
+                            <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
+                            <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
+                        </dateLabel>
+                    </items>
+                    <connections>
+                        <outlet property="de" destination="gvL-uP-mcE" id="bpP-9E-Cj5"/>
+                        <outlet property="imgView" destination="RWj-ZT-VZ7" id="mEa-FY-QXT"/>
+                        <outlet property="sl" destination="YRH-k7-qmv" id="IQv-VS-re1"/>
+                        <outlet property="sw" destination="Gji-XW-N0T" id="5Zz-5L-U0c"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="240" y="355.75"/>
+        </scene>
+    </scenes>
+</document>
